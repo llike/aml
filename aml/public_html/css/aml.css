@@ -1,0 +1,91 @@
+/* 
+    Created on : 2016-02-20, 15:29:37
+    Author     : Łukasz Wróbel
+    License     : MIT
+*/
+/*Global styles*/
+button::-moz-focus-inner {
+  border: 0;
+}
+/*AML Button style*/
+.ml-button {
+  border: 1px solid #eee;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 36px;
+  margin: 6px;
+  outline-style: none;
+  overflow: hidden;
+}
+/*AML Loading cicrular style*/
+.ml-loading-circular {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+/*AML Table style*/
+.ml-table {
+  width: 100%;
+  border-spacing: 0;
+}
+.ml-table thead tr,
+.ml-table tfoot tr {
+  height: 56px;
+}
+.ml-table thead th {
+  text-align: left;
+  color: #666;
+  padding: 0 10px;
+}
+.ml-table thead th.ml-title {
+  text-align: left !important;
+  font-size: 28px;
+}
+.ml-table thead th.ml-tbl-header {
+  cursor: pointer;
+}
+.ml-table tbody tr {
+  height: 48px;
+}
+.ml-table tbody td {
+  border-bottom: 1px solid #eee;
+  padding-left: 20px;
+}
+.ml-table tbody td:first-child,
+.ml-table thead th:first-child {
+  padding: 0 12px;
+  text-align: center;
+}
+.ml-table thead .ml-order:after {
+  content: '\25b2';
+}
+.ml-table thead .ml-order.ml-reverse:after {
+  content: '\25bc';
+}
+.mlt-string {
+  text-align: left;
+}
+.mlt-number {
+  text-align: right;
+}
+/*AML Library styles*/
+.ml-fl-left,
+.ml-fl-right {
+  display: inline-block;
+}
+.ml-fl-left {
+  text-align: left;
+  float: left;
+}
+.ml-fl-right {
+  text-align: right;
+  float: right;
+}
+.ml-center {
+  text-align: center;
+}
+.ml-bg-gray {
+  background-color: #ddd;
+}
+/*# sourceMappingURL=aml.css.map */

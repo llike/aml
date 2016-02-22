@@ -1,0 +1,42 @@
+<!-- 
+    Created on : 2016-02-20, 15:29:37
+    Author     : Łukasz Wróbel
+    License    : MIT
+-->
+
+<!DOCTYPE html>
+<html ng-app="testApp">
+    <head>
+	<title>AML Project</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/aml.css">
+	<link rel="stylesheet" href="css/master.css">
+
+	<script src="js/data/persons.js"></script>
+	<!--Not minimalised angular is better to debug.-->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="js/aml/core.js"></script>
+	<script src="js/aml/components.js"></script>
+	<script src="js/app/app.js"></script>
+	<script src="js/app/controllers.js"></script>
+	<script src="js/app/services.js"></script>
+
+
+
+    </head>
+    <body ng-controller="appController">
+
+    <ml-loading-circular ng-if="flags.init"></ml-loading-circular>
+	
+    <ml-table ml-title="{{'Persons'}}"
+	      ml-headers="personsHeaders" 
+	      ml-data="persons.all"
+	      ml-delete-action="deleteAction"
+	      ml-actions="personsActions"
+	      ng-show="!flags.init">
+    </ml-table>
+</body>
+</html>
