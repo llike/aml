@@ -27,13 +27,12 @@
 			    value: 'Last name'
 			    , field: 'last_name'
 			    , type: 'string'
-//			    , classes: ['ml-center', 'xxxx']
 			}, {
 			    value: 'SEX'
 			    , field: 'gender'
 			    , type: 'string'
 			    , classes: function (elementValue) {
-				return elementValue === 'Female' ? 'ml-center ml-bg-gray' : 'ml-center ';
+				return 'ml-center ' + (elementValue === 'Female' ? 'ml-bg-gray' : '');
 			    }
 			    , cellValue: function (elementValue) {
 				if (!elementValue)
@@ -68,7 +67,6 @@
 			    , fn: function () {
 				alert('Not implemented.');
 			    }
-//			}
 			}
 		    ];
 

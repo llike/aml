@@ -42,7 +42,6 @@
 //			callback(null);
 		    };
 
-		    // Private ====================
 		    this.init = function init(callback) {
 			// Initial promises
 			var promises = [];
@@ -70,6 +69,7 @@
 			return $q.all(promises);
 		    };
 
+		    // Private ====================
 		    function runCallback(callbackFn, err, data) {
 			return typeof callbackFn === 'function' ? callbackFn(err, data) : null;
 		    }
